@@ -270,10 +270,10 @@ transform: scale(2.1)
     margin-right: 10px;
     height: 90px;
 }
-#eventos li{
+#menueventos li{
     display: inline;
 }
-#eventos li a{
+#menueventos li a{
     font-family: Arial;
     font-size:14px;
     text-decoration: none;
@@ -286,22 +286,27 @@ transform: scale(2.1)
     margin-top: 40px;
     width: 800px;   
 }
-#evento li{
+#eventos li{
     display: inline;
 }
 .imgevent{
     display: inline;
+    background: #fff;
     width: 150px;
     height: 100px;
 }
-.imgevent:hover{
+/*.imgevent:hover{
     -moz-transform: scale(2.1);
 -webkit-transform: scale(2.1);
 -o-transform: scale(2.1);
 -ms-transform: scale(2.1);
 transform: scale(2.1)
-}
+}*/
 .piceventos {
     display: none;
     margin-top: 10px;
+}
+
+.shadow {
+    background-color: #fff;
 }

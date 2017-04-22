@@ -32,28 +32,52 @@ function avanzaSlide(){
 }
 
 function boda() {
-    document.getElementById('boda').style.display='block';
-    document.getElementById('infantil').style.display='none';
-    document.getElementById('xv').style.display='none';
-    document.getElementById('baby').style.display='none';
+    if(document.getElementById('boda').style.display=='none'){
+        document.getElementById('boda').style.display='block';
+        document.getElementById('infantil').style.display='none';
+        document.getElementById('xv').style.display='none';
+        document.getElementById('baby').style.display='none'; 
+    }else{
+        document.getElementById('boda').style.display='none';
+    }
+    
 } function infantil() {
-    document.getElementById('infantil').style.display = 'block';
-    document.getElementById('boda').style.display='none';
-    document.getElementById('xv').style.display='none';
-    document.getElementById('baby').style.display='none';
+    if(document.getElementById('infantil').style.display=='none'){
+        document.getElementById('infantil').style.display = 'block';
+        document.getElementById('boda').style.display='none';
+        document.getElementById('xv').style.display='none';
+        document.getElementById('baby').style.display='none';
+     }else{
+        document.getElementById('infantil').style.display='none';
+    }
 } function xv() {
-    document.getElementById('xv').style.display = '';
-    document.getElementById('boda').style.display='none';
-    document.getElementById('infantil').style.display='none';
-    document.getElementById('baby').style.display='none';
+    if(document.getElementById('xv').style.display=='none'){
+        document.getElementById('xv').style.display = 'block';
+        document.getElementById('boda').style.display='none';
+        document.getElementById('infantil').style.display='none';
+        document.getElementById('baby').style.display='none';
+    }else{
+        document.getElementById('xv').style.display='none';
+    }
 } function baby() {
-    document.getElementById('baby').style.display = '';
-    document.getElementById('infantil').style.display='none';
-    document.getElementById('xv').style.display='none';
-    document.getElementById('boda').style.display='none';
+    if(document.getElementById('baby').style.display=='none'){
+        document.getElementById('baby').style.display = 'block';
+        document.getElementById('infantil').style.display='none';
+        document.getElementById('xv').style.display='none';
+        document.getElementById('boda').style.display='none';
+    }else{
+        document.getElementById('baby').style.display='none';
+    }
 }function todos() {
-    document.getElementById('boda').style.display='block';       document.getElementById('baby').style.display = 'block';
-    document.getElementById('infantil').style.display='block';
-    document.getElementById('xv').style.display='block';
-            
+   if(document.getElementById('boda').style.display=='block'&& document.getElementById('baby').style.display == 'block'&&
+      document.getElementById('infantil').style.display=='block'&&document.getElementById('xv').style.display=='block'){
+        document.getElementById('baby').style.display = 'none';
+        document.getElementById('infantil').style.display='none';
+        document.getElementById('xv').style.display='none';
+        document.getElementById('boda').style.display='none';
+    }else{
+        document.getElementById('boda').style.display='block';   document.getElementById('baby').style.display = 'block';
+        document.getElementById('infantil').style.display='block';
+        document.getElementById('xv').style.display='block';
+    }
 }
